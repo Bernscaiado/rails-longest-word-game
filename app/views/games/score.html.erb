@@ -1,6 +1,8 @@
 <h1>Result</h1>
 
 <p><%= @result[:message] %></p>
+<p>Your score is <%= @result[:score] %> points</p>
+<p>Your time is <%= @result[:time].round %> seconds</p>
 
 
 <%= link_to 'Play again', 'new' %>

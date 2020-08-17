@@ -8,8 +8,8 @@ class GamesController < ApplicationController
   end
 
   def score
-    start_time = DateTime.now
-    end_time = DateTime.now
+    start_time = DateTime.parse(params[:time])
+    end_time = Time.now
     attempt = params[:word]
     grid = params[:letters]
     url = 'https://wagon-dictionary.herokuapp.com/' + attempt.to_s
